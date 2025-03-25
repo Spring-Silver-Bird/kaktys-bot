@@ -35,3 +35,14 @@ while counter < 100:
 
     time.sleep(1)
     counter += 1
+
+PATCH /comments/3 HTTP/1.1
+HOST: hexlet.local
+Content-Lenth: 20
+Content-Type: application/json
+{"text": "I got it!"}
+            {"id":3,"user_id":12,"text":"I got it!"}
+
+            GET/comments
+            HTTP/1.1
+            HOST: hexlet.local
